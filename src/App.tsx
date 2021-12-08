@@ -56,7 +56,7 @@ function App() {
 {console.log("name:>>>>")}
 {console.log(name)}
  
-
+testing
  <Routes>
         <Route path="/home" element={<Home name={name}/>}> </Route>
         <Route path="/login" element={<Login  setName={setName} />}> </Route>
