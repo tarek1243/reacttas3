@@ -19,9 +19,10 @@ const    Login = (props : {setName:(name:string)=> void }) =>{
         })
 
         const content =await response.json();
+        setRedirect(true);
         props.setName(content.name);
         console.log("done");
-         setRedirect(true);
+
       }
 
       if(redirect)

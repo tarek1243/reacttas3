@@ -21,9 +21,7 @@ const Nav = (props: { name: string, setName: (name: string) => void }) => {
         <li className="nav-item">
           <a className="nav-link active" aria-current="page" href="Register">Register</a>
         </li>
-        <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="TransactionsList">TransactionsList</a>
-        </li>
+
       </ul>
   }
 
@@ -31,14 +29,16 @@ const Nav = (props: { name: string, setName: (name: string) => void }) => {
     menu =
       <ul className="navbar-nav me-auto mb-2 mb-md-0">
         <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="Login" onClick={() => logout()}>Logout</a>
+          <a className="nav-link active" aria-current="page" href="logout" onClick={() => logout()}>Logout</a>
         </li>
         <li className="nav-item">
           <a className="nav-link active" aria-current="page" href="TransactionsList"  >TransactionsList</a>
         </li>
         <li className="nav-item">
-          <span className="nav-link active" aria-current="page"    >name is {props.name}</span>
+          <span className="nav-link active" aria-current="page">name is {props.name}</span>
         </li>
+
+        
       </ul>
   }
 

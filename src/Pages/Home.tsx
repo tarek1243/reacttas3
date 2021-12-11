@@ -1,21 +1,28 @@
+import { useEffect, useState } from "react";
 
-const Home = (props : {name : string}) => {
+const Home = (props: { name: string }) => {
 
- 
-//   function sayHello() {
-//     async function fetchMyAPI() {
-//       const response = await fetch(baseUrl+'user', {
-//         headers: { 'Content-type': 'application/json' },
-//       });
-//       const content = await response.json();
-//       setName(content.name);
-// console.log(content)
-//     }
-//     fetchMyAPI()
-//   }
+  // const [name , setName] = useState('');
+  // useEffect(
+  //   () => {
+  //     (async () => { })();
+  //   });
 
 
-////working
+  //   function sayHello() {
+  //     async function fetchMyAPI() {
+  //       const response = await fetch(baseUrl+'user', {
+  //         headers: { 'Content-type': 'application/json' },
+  //       });
+  //       const content = await response.json();
+  //       setName(content.name);
+  // console.log(content)
+  //     }
+  //     fetchMyAPI()
+  //   }
+
+
+  ////working
   // useEffect(() => {
   //   async function fetchMyAPI() {
   //     const response = await fetch(baseUrl+'userAny', {
