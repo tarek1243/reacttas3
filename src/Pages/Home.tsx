@@ -1,11 +1,5 @@
 
-import React, { useEffect, useState } from "react";
-
-import baseUrl from "./globalVars";
- 
-
 const Home = (props : {name : string}) => {
-  //const [name, setName] = useState('')
 
  
 //   function sayHello() {
@@ -34,18 +28,12 @@ const Home = (props : {name : string}) => {
   //   }
   //   fetchMyAPI()
   // }, [])
- 
 
-  const [count, setCount] = useState(0);
   return (
     <div>
       <form>
         <h1 className="h3 mb-3 fw-normal">{props.name ? 'Hi' + props.name : 'Not authinticated'}</h1>
       </form>
-      {/* <button onClick={() =>   setCount(count + 1)}>
-        Click me
-      </button>
-       <button onClick={() =>sayHello( )}>sayHello</button>  */}
     </div>
   );
 };
