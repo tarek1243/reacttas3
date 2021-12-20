@@ -21,6 +21,8 @@ const    Login = (props : {setName:(name:string)=> void }) =>{
         const content =await response.json();
         setRedirect(true);
         props.setName(content.name);
+        setRedirect(true);///wrong 
+
         console.log("done");
 
       }
@@ -46,7 +48,7 @@ return (
         <input type="checkbox" value="remember-me"/> 
     </div>
     <button className="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
-    <p className="mt-5 mb-3 text-muted">©2022   1.1</p>
+  
   </form>
 </div>
 );
